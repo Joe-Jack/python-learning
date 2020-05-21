@@ -1,0 +1,17 @@
+# -*- coding: cp936 -*-
+name = raw_input("ÕË»§Ãû\n")
+password = raw_input("ÃÜÂë\n")
+isOK = 0
+
+for count in range(1, 3):
+    if name == "admin" and password == "123":
+        print("µÇÂ½³É¹¦")
+        isOK = 1
+        break
+    else:
+        print("ÕËºÅ»òÃÜÂë´íÎó\n")
+        name = raw_input("ÕË»§Ãû\n")
+        password = raw_input("ÃÜÂë\n")
+
+if isOK != 1:
+    print("µÇÂ½Ê§°Ü")
