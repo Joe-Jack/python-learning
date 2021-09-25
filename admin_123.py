@@ -1,6 +1,6 @@
 # -*- coding: cp936 -*-
-name = raw_input("账户名\n")
-password = raw_input("密码\n")
+name = input("账户名\n")
+password = input("密码\n")
 isOK = 0
 
 for count in range(1, 3):
@@ -10,8 +10,8 @@ for count in range(1, 3):
         break
     else:
         print("账号或密码错误\n")
-        name = raw_input("账户名\n")
-        password = raw_input("密码\n")
+        name = input("账户名\n")
+        password = input("密码\n")
 
 if isOK != 1:
     print("登陆失败")
